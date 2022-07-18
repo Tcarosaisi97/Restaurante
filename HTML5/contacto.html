@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navegacion">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#" class="logo">LOGO</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../HTML5/menu.html" class="nav-link ">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../HTML5/reservacion.html" class="nav-link ">Reservaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../HTML5/historia.html" class="nav-link ">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../HTML5/contacto.html" class="nav-link ">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="h2-sub">
+                <span class="fil"></span>
+            </h2>
+            <h1 class="head"></h1>
+        </div>
+    </section>
+
+    <div class="container-contacto">
+        <div class="info-form">
+            <h2>contactanos</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa illum suscipit et velit voluptatum voluptas!</p>
+            <a href="#"><i class="fa fa-phone"></i>11-5678-4512</a>
+            <a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i>cuidad de paris</a>
+        </div>
+        <form action="#" autocomplete="oof">
+            <input type="text" name="nombre" placeholder="ingresa tu nombre" class="campo">
+            <input type="email" name="email" placeholder="ingresa tu correo" class="campo">
+            <textarea name="mensaje" placeholder="ingresar mensaje" id="" cols="30" rows="10"></textarea>
+            <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+        </form>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                    <h4>Nosotros</h4>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Praesentium odio labore dolorum veritatis, culpa cumque eum 
+                        reprehenderit iure, commodi, repellat eaque possimus obcaecati 
+                        assumenda exercitationem? 
+                        Aperiam provident accusantium laboriosam. Necessitatibus!</p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Noticias</h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input"
+                            placeholder="Escribe tu email"
+                            >
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>  
+
+</body>
+</html>
